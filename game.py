@@ -1,9 +1,16 @@
+"""
+This is the main file to start the game
+"""
+
 from game_exceptions import GameOver, EnemyDown, InvalidInput
 from models import Player, Enemy
 from settings import GameOptions
 
 
 def play():
+    """
+    This is a function without parameters that starts the game process.
+    """
     while True:
         username = input("Enter your name: ")
         if len(username.strip()):
